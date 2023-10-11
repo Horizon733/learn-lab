@@ -1,0 +1,17 @@
+modules:
+  jira:issuePanel:
+    - key: learn-lab-hello-world-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: learn-lab
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/33f63f79-9bdc-41ae-9e8f-72cdcc8789f1
